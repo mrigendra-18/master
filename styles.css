@@ -1,0 +1,162 @@
+body{
+    font-family: "Outfit", serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  margin-left: 50px;
+}
+
+#list-items {
+    display: flex;
+    gap: 48px;
+    list-style-type: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#Login {
+    border: none;
+    background-color: white;
+    color: #FB5F66;
+    cursor: pointer;
+}
+
+#Register {
+    width: 136px;
+    height: 52px;
+    color: white;
+    background-color: #FB5F66;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-icon span {
+    background-color: #FB5F66;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+}
+
+@media (max-width: 568px) {
+    #list-items {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        list-style-type: none;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    #list-items.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .navbar div:last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #Login, #Register {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #Register {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+.container{
+    margin-top: 180px;
+}
+
+.first-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#get-started{
+    width: 141px;
+    height: 48px;
+    color: white;
+    background-color:#FB5F66 ;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.last-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#Login, #Register, #get-started {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+#Login {
+    background-color: white;
+    color: #FB5F66;
+    border: none;
+    cursor: pointer;
+}
+
+#Register, #get-started {
+    background-color: #FB5F66;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #Login, #Register, #get-started {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #Login, #Register, #get-started {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

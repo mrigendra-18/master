@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit&family=Poppins:wght@100;500&display=swap');
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div>
+          <img src="image/Frame 37144.png" alt="Logo" style="width: 42px; height: 55px;" />
+        </div>
+        <div>
+          <ul id="list-items" class="hidden">
+            <li>Home</li>
+            <li>Features</li>
+            <li>How it works</li>
+            <li>Pricing</li>
+          </ul>
+        </div>
+        <div class="auth-buttons" style="display: flex; gap: 16px;">
+          <button id="Login">Log in</button>
+          <button id="Register">Register</button>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div style="position: absolute; left: 0px; bottom: 58px;">
+        <img src="image/Group 1321316781.png" alt="Background Image Left" />
+      </div>
+      <div style="position: absolute; right: 0px; bottom: 58px;">
+        <img src="image/Group 1321316780.png" alt="Background Image Right" />
+      </div>
+      <div class="first-container">
+        <div class="announcement-banner" style="display: flex; gap: 5px; justify-content: center; align-items: center; background-color: #FFF2F3; color: #FB5F66; border-radius: 20px; padding: 7px;">
+          <img src="image/magicpen.png" alt="Magic Pen Icon" />
+          <span>The Future of Learning is Here</span>
+        </div>
+        <div style="text-align: center;">
+          <h1 style="margin-bottom: -5px; font-size: 45px;"> Meet Your 24/7 AI Voice Tutor</h1>
+          <img style="height: 15px; width: 180px;" src="image/Arrow 22.png" alt="Arrow" />
+          <p>Transform your learning experience with an AI tutor that watches, listens, and guides you to success— <br>just like having a brilliant mentor by your side, available anytime you need help.</p>
+        </div>
+        <div>
+          <button id="get-started">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="last-container">
+      <div class="announcement-banner" style="display: flex; gap: 5px; justify-content: center; align-items: center; background-color: #FFF2F3; color: #FB5F66; border-radius: 20px; padding: 7px;">
+        <img src="image/user-tag.png" alt="User Tag Icon" />
+        <span>Your Personal Genius Mentor</span>
+      </div>
+      <div style="text-align: center;">
+        <h1>Imagine Having A Tutor Who</h1>
+      </div>
+
+      <div class="features-container" style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <div class="feature-column" style="display: flex; gap: 16px; flex-direction: column; flex-wrap: wrap; margin: auto;">
+          <div class="feature-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border: 2px solid #E1E0E0; width: 386px; height: 182px; border-radius: 10px; background: linear-gradient(white, rgb(255, 242, 244));">
+            <img src="image/monitor-recorder.png" alt="Monitor Recorder" />
+            <p>Sees your screen in real-time, instantly understanding your work</p>
+          </div>
+          <div class="feature-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border: 2px solid #E1E0E0; width: 386px; height: 182px; border-radius: 10px; background: linear-gradient(white, rgb(255, 242, 244));">
+            <img src="image/monitor-recorder.png" alt="Monitor Recorder" />
+            <p>Guides you step-by-step through any problem</p>
+          </div>
+        </div>
+        <div class="feature-column" style="display: flex; gap: 16px; flex-direction: column; flex-wrap: wrap; margin: auto;">
+          <div class="feature-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border: 2px solid #E1E0E0; width: 300px; height: 382px; border-radius: 10px; background: linear-gradient(white, rgb(255, 242, 244));">
+            <img src="image/monitor-recorder.png" alt="Monitor Recorder" />
+            <p>Speaks naturally with you, answering questions immediately</p>
+          </div>
+        </div>
+        <div class="feature-column" style="display: flex; gap: 16px; flex-direction: column; flex-wrap: wrap; margin: auto;">
+          <div class="feature-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border: 2px solid #E1E0E0; width: 386px; height: 182px; border-radius: 10px; background: linear-gradient(white, rgb(255, 242, 244));">
+            <img src="image/monitor-recorder.png" alt="Monitor Recorder" />
+            <p>Adapts to your unique learning style and pace</p>
+          </div>
+          <div class="feature-box" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border: 2px solid #E1E0E0; width: 386px; height: 182px; border-radius: 10px; background: linear-gradient(white, rgb(255, 242, 244));">
+            <img src="image/monitor-recorder.png" alt="Monitor Recorder" />
+            <p>Is available 24/7, whenever inspiration strikes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('list-items');
+        menu.classList.toggle('show');
+      }
+    </script>
+  </body>
+</html>
