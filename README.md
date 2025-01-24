@@ -25,7 +25,7 @@ The AI Voice Tutor design showcases:
 ## Figma Link
 
 View the static design here: [Figma Design File](https://www.figma.com/design/dJ3Ep117E420Cz55ZkKoch/Untitled?node-id=0-1&p=f&t=WSPiOFCM0jcnHGy2-0)  
-(*Replace `#` with your Figma file link.*)
+
 
 
 
